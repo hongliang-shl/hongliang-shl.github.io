@@ -1,7 +1,4 @@
 
-
-[![hongliang-shl](https://img.shields.io/badge/hongliang-shl-github-blue?logo=github)](https://github.com/hongliang-shl)
-
 助理实验师｜浙江海洋大学｜人工智能、多模态大模型、AI4Science.
 
 #### Education
