@@ -1,4 +1,3 @@
-#### Published
 
 - Dong A S，Song H L. Image retrieval technology based on SIFT feature and colour fusion．Journal of Jilin University，2013; 43 ( S) : 440—444
 
