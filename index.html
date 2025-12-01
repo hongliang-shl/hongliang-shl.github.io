@@ -113,7 +113,7 @@
         </div>
     </nav>
 
-    <!-- Top Section -->
+    <!-- Top Section 
     <section class="top-section" style="background-image: url('static/assets/img/background.jpg');">
         <div class="top-section-content">
             <div class="container px-5">
@@ -121,8 +121,59 @@
             </div>
         </div>
     </section>
+ Top Section -->
+
+    <!-- Top Section -->
+    <section class="top-section" id="hero-section">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt">
+                    <!-- 可选：添加默认标题 -->
+                </h2>
+            </div>
+        </div>
+    </section>
     <!-- Top Section -->
 
+    <style>
+        .top-section {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh; /* 或你想要的高度，如 80vh */
+            transition: background-image 1s ease-in-out; /* 淡入淡出效果 */
+        }
+        .top-section-content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        // 背景图片数组（路径根据你的项目调整）
+        const images = [
+            'static/assets/img/background1.jpg',
+            'static/assets/img/background2.jpg',
+            'static/assets/img/background3.jpg'
+        ];
+    
+        let currentIndex = 0;
+        const heroSection = document.getElementById('hero-section');
+    
+        function changeBackground() {
+            heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+    
+        // 初始加载第一张图
+        changeBackground();
+    
+        // 每 5 秒切换一次
+        setInterval(changeBackground, 5000);
+    </script>
+    
     <!-- Photo -->
     <div class="container px-5">
         <div id="avatar">
